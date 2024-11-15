@@ -12,7 +12,7 @@ const Backend = () => {
               <h3 className="skills__name">Node js</h3>
               <span className="skills__level">Basic</span>
             </div>
-
+            </div>
             <div className="skills__data">
             <i class="bx bx-badge-check"></i>
             <div>
@@ -28,7 +28,7 @@ const Backend = () => {
               <span className="skills__level">Intermediate</span>
             </div>
           </div>
-          </div>
+         
         </div>
 
         <div className="skills__group">
@@ -37,6 +37,7 @@ const Backend = () => {
             <div>
               <h3 className="skills__name">Firebase</h3>
               <span className="skills__level">Intermediate</span>
+            </div>
             </div>
 
             <div className="skills__data">
@@ -53,7 +54,6 @@ const Backend = () => {
               <h3 className="skills__name">Dev oops</h3>
               <span className="skills__level">Basic</span>
             </div>
-          </div>
           </div>
         </div>
       </div>

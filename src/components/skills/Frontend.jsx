@@ -12,8 +12,9 @@ const Frontend = () => {
               <h3 className="skills__name">React Native</h3>
               <span className="skills__level">Advanced</span>
             </div>
+          </div>
 
-            <div className="skills__data">
+          <div className="skills__data">
             <i class="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">Javascript</h3>
@@ -28,7 +29,6 @@ const Frontend = () => {
               <span className="skills__level">Basic</span>
             </div>
           </div>
-          </div>
         </div>
 
         <div className="skills__group">
@@ -38,23 +38,23 @@ const Frontend = () => {
               <h3 className="skills__name">Android</h3>
               <span className="skills__level">Advanced</span>
             </div>
+            </div>
 
             <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">IOS</h3>
-              <span className="skills__level">Advanced</span>
+              <i class="bx bx-badge-check"></i>
+              <div>
+                <h3 className="skills__name">IOS</h3>
+                <span className="skills__level">Advanced</span>
+              </div>
             </div>
-          </div>
 
-          <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">GIT</h3>
-              <span className="skills__level">Advanced</span>
+            <div className="skills__data">
+              <i class="bx bx-badge-check"></i>
+              <div>
+                <h3 className="skills__name">GIT</h3>
+                <span className="skills__level">Advanced</span>
+              </div>
             </div>
-          </div>
-          </div>
         </div>
       </div>
     </div>
