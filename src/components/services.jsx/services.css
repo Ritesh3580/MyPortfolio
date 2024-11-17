@@ -141,6 +141,12 @@
 
   @media screen and (max-width: 576px) {
     
+    .services__modal-content{
+        padding: 4.5rem 1.rem 2.5rem;
+    }
+    .services__modal-description {
+        padding: 0;
+    }
     
   }
 
@@ -148,5 +154,11 @@
 
   @media screen and (max-width: 350px) {
     
+    .services__container{
+        grid-template-columns: max-content;
+    }
+    .services__content{
+        padding-right: 6rem;
+    }
     
   }
