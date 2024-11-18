@@ -51,7 +51,7 @@
     margin-bottom: var(--mb-3);
 }
 .home__img{
-    background: url('../../assets/profile.jpg');
+    background: url('../../assets/profiles.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
