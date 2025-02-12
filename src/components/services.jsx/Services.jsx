@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import './services.css'
+import "./services.css";
 
 const Services = () => {
+  const [toggleState, settoggleState] = useState(0);
 
-    const [toggleState, settoggleState] = useState(0);
-
-    const toggleTab = (index) =>{
-        settoggleState(index);
-    }
+  const toggleTab = (index) => {
+    settoggleState(index);
+  };
 
   return (
     <section className="services section" id="services">
@@ -27,9 +26,18 @@ const Services = () => {
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 1
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
               <h3 className="services__modal-title">Mobile App Development</h3>
               <p className="services__modal-description">
                 Service with more than 3 years of experience Providing quality
@@ -39,27 +47,30 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Develop the user interface.
+                    Backend as a Service (BaaS).
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
+                  <p className="services__modal-info">API Services</p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I create Native Application /
+                    Authentication Services
                   </p>
                 </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">Payment & Monetization</p>
+                </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Publishing an application on both the Apple App Store and
-                    Google Play Store.
+                    Cross-Platform App Development (iOS & Android)
                   </p>
                 </li>
               </ul>
@@ -79,9 +90,18 @@ const Services = () => {
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 2
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"  onClick={() => toggleTab(0)}></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
               <h3 className="services__modal-title">Webapp Development</h3>
               <p className="services__modal-description">
                 Service with more than 3 years of experience Providing quality
@@ -91,27 +111,26 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create Native Application /
+                    Full-Stack Web Development
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Publishing an application on both the Apple App Store and
-                    Google Play Store.
+                    Single Page Applications (SPAs)
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">React.js / Next.js</p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Node.js / Express.js / Nest.js Development
                   </p>
                 </li>
               </ul>
@@ -131,9 +150,18 @@ const Services = () => {
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"  onClick={() => toggleTab(0)}></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
               <h3 className="services__modal-title">Ui/Ux Designer</h3>
               <p className="services__modal-description">
                 Service with more than 3 years of experience Providing quality
@@ -143,27 +171,28 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create Native Application /
+                    User Research & Analysis
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Publishing an application on both the Apple App Store and
-                    Google Play Store.
+                    Website & Mobile App Design
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Branding & Visual Identity
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    UI/UX Design & Prototyping
                   </p>
                 </li>
               </ul>
