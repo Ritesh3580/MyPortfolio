@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# RiteshDev Studio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Premium 3D interactive marketing website for a freelance/full-stack mobile app developer brand focused on lead generation for mobile apps, dashboards, Firebase systems, API integration, payments, deployment, and production support.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- React 18
+- Vite
+- Tailwind CSS v4
+- Framer Motion
+- Three.js
+- React Three Fiber
 
-### `npm start`
+## Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Install dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+2. Start the Vite dev server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run dev
+```
 
-### `npm run build`
+3. Open the local URL shown in the terminal, usually:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```text
+http://localhost:5173
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Production Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+The production output is generated in:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```text
+dist/
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To preview the production build locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run preview
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
 
-## Learn More
+```text
+src/
+  components/
+    layout/
+      Header.jsx
+      Footer.jsx
+      LoaderScreen.jsx
+      ScrollProgress.jsx
+    sections/
+      HeroSection.jsx
+      ProblemSection.jsx
+      ServicesSection.jsx
+      PortfolioSection.jsx
+      ProcessSection.jsx
+      TechStackSection.jsx
+      PricingSection.jsx
+      WhyChooseSection.jsx
+      TestimonialsSection.jsx
+      LeadCaptureSection.jsx
+    three/
+      HeroScene.jsx
+    ui/
+      Button.jsx
+      GlassCard.jsx
+      SectionIntro.jsx
+  data/
+    siteData.js
+  App.jsx
+  main.jsx
+  styles.css
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Content/Data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dummy content for services, portfolio, pricing, testimonials, and stack badges lives in:
 
-### Code Splitting
+- [src/data/siteData.js](/Users/riteshsharma/react_js/MyPortfolio/src/data/siteData.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Notes
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The 3D hero scene is lazy-loaded to keep the initial page lighter.
+- A static hero fallback is used on smaller screens and reduced-motion environments.
+- Portfolio poster assets are loaded from `public/`.
