@@ -10,12 +10,12 @@ function PortfolioSection({ items }) {
         {items.map((item) => (
           <GlassCard key={item.title} className="flex flex-col overflow-hidden">
             {/* Image Banner */}
-            <div className="relative h-44 sm:h-56 w-full shrink-0 overflow-hidden">
+            <div className="relative aspect-[5/6] sm:aspect-[4/5] lg:aspect-[5/6] w-full shrink-0 overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.98),_rgba(241,245,249,0.96)_56%,_rgba(226,232,240,0.92)_100%)]">
               {item.image ? (
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain object-center p-1 sm:p-2 transition-transform duration-500 group-hover:scale-[1.02]"
                   loading="lazy"
                 />
               ) : (

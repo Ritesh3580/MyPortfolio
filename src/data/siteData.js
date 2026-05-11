@@ -56,11 +56,13 @@ export const portfolioItems = [
     value: 'Created a stronger business-ready payment product experience with clearer monetization potential.',
   },
   {
-    title: 'EMI Calculator App',
-    problem: 'Finance-focused users needed a lightweight tool to calculate EMI quickly and compare loan scenarios.',
-    solution: 'Designed a fast calculator workflow with instant outputs, clean data entry, and finance-friendly visual design.',
-    stack: ['React Native', 'JavaScript', 'Calculator Logic'],
-    value: 'Enabled quick lead acquisition and repeat engagement for finance-related mobile product use cases.',
+    title: 'Galoiz App',
+    image: '/poster-galoiz.png',
+    problem: 'Online shoppers needed a more social and collaborative way to discover products, discuss purchases, and make confident buying decisions with trusted communities.',
+    solution: 'Built a social commerce mobile app that combines product discovery, community feeds, real-time chat, recommendations, and group discussions into one shared shopping experience.',
+    stack: ['React Native', 'Redux / Context API', 'REST API', 'Firebase / Socket.io'],
+    value: 'Improved shopping trust and engagement by adding community conversations, product recommendations, and collaborative decision-making before purchase.',
+    link: 'https://play.google.com/store/apps/details?id=com.galoiz',
   },
 ];
 

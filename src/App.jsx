@@ -59,19 +59,17 @@ function App() {
       return;
     }
 
-    const subject = encodeURIComponent(`Project Inquiry from ${name}`);
     const plainMessage = `Name: ${name}\nEmail: ${email}\nPhone/WhatsApp: ${phone}\nProject Type: ${projectType}\nBudget Range: ${budget}\n\nMessage:\n${message}`;
-    const body = encodeURIComponent(plainMessage);
     const whatsappHref = `https://wa.me/918077176860?text=${encodeURIComponent(
       `Hello Ritesh, here is my project inquiry:\n\n${plainMessage}`
     )}`;
 
     setFormState({
-      note: 'Opening your email client. If it does not open, use the WhatsApp fallback button below.',
+      note: 'Opening WhatsApp with your project inquiry.',
       error: false,
       whatsappHref,
     });
-    window.location.href = `mailto:riteshsharma395@gmail.com?subject=${subject}&body=${body}`;
+    window.open(whatsappHref, '_blank', 'noopener,noreferrer');
     form.reset();
   };
 
