@@ -2,9 +2,9 @@ import SectionIntro from '../ui/SectionIntro';
 
 function TechStackSection({ items }) {
   return (
-    <section className="section-shell py-24" id="stack">
-      <SectionIntro eyebrow="Tech Stack" title="A Modern Product Stack for App Delivery, APIs, Releases, and Maintenance" description="The site uses a lightweight animated orbit instead of heavy 3D everywhere so performance stays strong while the visual language still feels premium." />
-      <div className="glass-panel relative mt-14 overflow-hidden rounded-[34px] p-8 md:p-12">
+    <section className="section-shell py-14 sm:py-20 lg:py-24" id="stack">
+      <SectionIntro eyebrow="Tech Stack" title="A Modern Product Stack for App Delivery, APIs, Releases, and Maintenance" description="Every project is built with proven, production-grade technologies chosen for performance, scalability, and long-term maintainability." />
+      <div className="glass-panel relative mt-8 sm:mt-14 overflow-hidden rounded-[28px] sm:rounded-[34px] p-6 sm:p-8 md:p-12">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(102,137,255,0.18),_transparent_48%)]" />
         <div className="relative mx-auto max-w-5xl">
           <div className="grid gap-3 lg:hidden">

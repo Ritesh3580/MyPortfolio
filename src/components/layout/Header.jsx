@@ -44,11 +44,18 @@ function Header({ menuOpen, setMenuOpen }) {
           onClick={() => setMenuOpen((current) => !current)}
           aria-label="Toggle navigation"
         >
-          <span className="flex flex-col gap-1.5">
-            <span className="block h-0.5 w-5 bg-white" />
-            <span className="block h-0.5 w-5 bg-white" />
-            <span className="block h-0.5 w-5 bg-white" />
-          </span>
+          {menuOpen ? (
+            <span className="relative flex h-5 w-5 items-center justify-center">
+              <span className="absolute block h-0.5 w-5 rotate-45 bg-white" />
+              <span className="absolute block h-0.5 w-5 -rotate-45 bg-white" />
+            </span>
+          ) : (
+            <span className="flex flex-col gap-1.5">
+              <span className="block h-0.5 w-5 bg-white" />
+              <span className="block h-0.5 w-5 bg-white" />
+              <span className="block h-0.5 w-5 bg-white" />
+            </span>
+          )}
         </button>
       </div>
 

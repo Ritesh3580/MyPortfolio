@@ -4,38 +4,77 @@ import SectionIntro from '../ui/SectionIntro';
 
 function PortfolioSection({ items }) {
   return (
-    <section className="section-shell py-24" id="portfolio">
+    <section className="section-shell py-14 sm:py-20 lg:py-24" id="portfolio">
       <SectionIntro eyebrow="Portfolio" title="Case Studies Designed Around Business Problems and Operational Outcomes" description="Each project demonstrates product thinking, implementation depth, and a direct link between software decisions and business value." />
-      <div className="mt-12 grid gap-6 lg:grid-cols-2">
+      <div className="mt-8 sm:mt-12 grid gap-5 sm:gap-6 lg:grid-cols-2">
         {items.map((item) => (
-          <GlassCard key={item.title} className="overflow-hidden">
-            <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
-              <div className="relative min-h-[280px] overflow-hidden border-b border-white/8 lg:border-b-0 lg:border-r">
-                {item.image ? (
-                  <img src={item.image} alt={item.title} className="h-full w-full object-cover object-top" loading="lazy" />
-                ) : (
-                  <div className="flex h-full min-h-[280px] items-end bg-[linear-gradient(135deg,#122444_0%,#4d70ff_54%,#8658ff_100%)] p-6">
-                    <span className="text-2xl font-semibold text-white">{item.title}</span>
-                  </div>
-                )}
-                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#07101f] to-transparent" />
+          <GlassCard key={item.title} className="flex flex-col overflow-hidden">
+            {/* Image Banner */}
+            <div className="relative h-44 sm:h-56 w-full shrink-0 overflow-hidden">
+              {item.image ? (
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(135deg,#122444_0%,#4d70ff_54%,#8658ff_100%)]">
+                  <span className="text-3xl font-bold text-white/80 tracking-tight">{item.title}</span>
+                </div>
+              )}
+              {/* bottom fade into card body */}
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0d1426] to-transparent" />
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-1 flex-col p-5 pt-4 sm:p-7 sm:pt-5">
+              <h3 className="text-xl font-semibold leading-snug text-white">{item.title}</h3>
+
+              <div className="mt-5 space-y-3 text-sm leading-relaxed text-slate-400">
+                <p>
+                  <span className="font-semibold text-slate-200">Problem — </span>
+                  {item.problem}
+                </p>
+                <p>
+                  <span className="font-semibold text-slate-200">Solution — </span>
+                  {item.solution}
+                </p>
+                <p>
+                  <span className="font-semibold text-cyan-300">Business Value — </span>
+                  {item.value}
+                </p>
               </div>
-              <div className="p-7">
-                <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
-                <div className="mt-6 space-y-4 text-sm leading-7 text-slate-300">
-                  <p><span className="font-semibold text-white">Problem:</span> {item.problem}</p>
-                  <p><span className="font-semibold text-white">Solution:</span> {item.solution}</p>
-                  <p><span className="font-semibold text-white">Business Value:</span> {item.value}</p>
-                </div>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {item.stack.map((tech) => (
-                    <span key={tech} className="rounded-full border border-cyan-300/18 bg-cyan-300/8 px-3 py-1.5 text-xs font-semibold text-cyan-100">{tech}</span>
-                  ))}
-                </div>
-                <div className="mt-7 flex flex-wrap gap-3">
-                  <Button href={item.link || `https://wa.me/918077176860?text=${encodeURIComponent(`Hello Ritesh, I want the case study for ${item.title}.`)}`} target="_blank" rel="noopener noreferrer">View Case Study</Button>
-                  <Button href={`https://wa.me/918077176860?text=${encodeURIComponent(`Hello Ritesh, I want a project similar to ${item.title}.`)}`} variant="secondary" target="_blank" rel="noopener noreferrer">Discuss Similar Build</Button>
-                </div>
+
+              {/* Tech stack */}
+              <div className="mt-4 sm:mt-5 flex flex-wrap gap-2">
+                {item.stack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Actions — pushed to bottom */}
+              <div className="mt-auto pt-5 sm:pt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Button
+                  href={item.link || `https://wa.me/918077176860?text=${encodeURIComponent(`Hello Ritesh, I want the case study for ${item.title}.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Case Study
+                </Button>
+                <Button
+                  href={`https://wa.me/918077176860?text=${encodeURIComponent(`Hello Ritesh, I want a project similar to ${item.title}.`)}`}
+                  variant="secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discuss Similar Build
+                </Button>
               </div>
             </div>
           </GlassCard>

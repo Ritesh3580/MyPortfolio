@@ -117,7 +117,7 @@ function FloatingSystem() {
 
 function HeroScene() {
   return (
-    <div className="h-[520px] w-full overflow-hidden rounded-[34px] border border-cyan-300/12 bg-[radial-gradient(circle_at_top,_rgba(112,150,255,0.18),_transparent_36%),linear-gradient(180deg,rgba(15,21,40,0.92),rgba(7,10,18,0.78))]">
+    <div className="h-[340px] w-full overflow-hidden rounded-[32px] border border-cyan-300/12 bg-[radial-gradient(circle_at_top,_rgba(112,150,255,0.18),_transparent_36%),linear-gradient(180deg,rgba(15,21,40,0.92),rgba(7,10,18,0.78))] sm:h-[440px] lg:h-[500px]">
       <Canvas dpr={[1, 1.8]} camera={{ position: [0, 0.2, 6.4], fov: 36 }}>
         <FloatingSystem />
       </Canvas>

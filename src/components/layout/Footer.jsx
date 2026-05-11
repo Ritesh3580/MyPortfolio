@@ -1,7 +1,7 @@
 function Footer({ links }) {
   return (
-    <footer className="border-t border-white/8 py-12">
-      <div className="section-shell grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
+    <footer className="border-t border-white/8 py-10 sm:py-12">
+      <div className="section-shell grid gap-8 sm:gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
           <h3 className="text-xl font-semibold text-white">RiteshDev Studio</h3>
           <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
@@ -14,6 +14,8 @@ function Footer({ links }) {
           <div className="mt-4 space-y-3 text-sm text-slate-400">
             <div>Mobile Apps</div>
             <div>Web Dashboards</div>
+            <div>SaaS Products</div>
+            <div>Backend Development</div>
             <div>Firebase Integration</div>
             <div>Deployment Support</div>
           </div>
@@ -37,7 +39,7 @@ function Footer({ links }) {
         </div>
       </div>
 
-      <div className="section-shell mt-10 border-t border-white/8 pt-6 text-sm text-slate-500">
+      <div className="section-shell mt-8 sm:mt-10 border-t border-white/8 pt-6 text-sm text-slate-500">
         © 2026 RiteshDev Studio. Premium mobile app, dashboard, and MVP development.
       </div>
     </footer>

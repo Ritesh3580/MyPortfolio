@@ -1,6 +1,8 @@
 export const serviceCards = [
   { icon: 'RN', title: 'React Native Mobile App Development', description: 'Cross-platform Android and iOS apps with native-feeling UI, auth flows, offline support, maps, and production deployment.' },
   { icon: 'WEB', title: 'React JS Website & Admin Panel', description: 'High-conversion websites, internal dashboards, booking systems, and business control panels built for scale.' },
+  { icon: 'SAAS', title: 'SaaS Dashboard Development', description: 'Multi-tenant SaaS product UIs, role-based admin panels, subscription flows, and data-driven dashboard experiences built for scale.' },
+  { icon: 'NODE', title: 'Node.js Backend Development', description: 'REST APIs, Express servers, authentication systems, database design, and server-side business logic for web and mobile products.' },
   { icon: 'FB', title: 'Firebase / Firestore Integration', description: 'Auth, Firestore, cloud messaging, storage, and real-time systems configured for fast product delivery.' },
   { icon: 'API', title: 'REST API Integration', description: 'Third-party APIs, CRM systems, booking engines, logistics services, and secure backend connectivity.' },
   { icon: 'PAY', title: 'Payment Gateway Integration', description: 'Razorpay, Stripe, wallets, subscriptions, transaction handling, and payment success/failure workflows.' },
@@ -91,24 +93,25 @@ export const packages = [
 ];
 
 export const audienceHighlights = [
-  'Clean and scalable code',
-  'Fast communication',
-  'Business-focused development',
-  'Mobile-first UI',
-  'Secure API integration',
-  'Store deployment support',
-  'Post-launch maintenance',
+  { title: 'Clean and scalable code', description: 'Every codebase is structured for long-term maintainability, easy handover, and future feature growth.' },
+  { title: 'Fast communication', description: 'Quick responses, clear updates, and proactive progress sharing throughout the entire project lifecycle.' },
+  { title: 'Business-focused development', description: 'Features are prioritized by business impact, not technical preference — built to solve real operational problems.' },
+  { title: 'Mobile-first UI', description: 'Every screen is designed and tested for mobile first, then scaled up to tablet and desktop.' },
+  { title: 'Full-Stack & Backend Builds', description: 'From React Native to Node.js APIs and PostgreSQL databases — full product delivery without handoffs.' },
+  { title: 'Secure API integration', description: 'Third-party APIs, payment gateways, and backend services integrated securely with proper error handling.' },
+  { title: 'Store deployment support', description: 'App Store and Play Store submission, signing, policy checks, and rejection resolution included.' },
+  { title: 'Post-launch maintenance', description: 'Ongoing bug fixes, dependency updates, feature additions, and production monitoring after go-live.' },
 ];
 
 export const testimonials = [
-  { quote: 'RiteshDev Studio turned our rough product idea into a polished mobile app flow that felt ready for real customers.', author: 'Startup Founder' },
-  { quote: 'The dashboard and mobile workflows were aligned with our business process from day one. Delivery was clear and reliable.', author: 'Operations Lead' },
-  { quote: 'Strong technical execution across React Native, Firebase, APIs, and release support. Very practical and business-minded.', author: 'Product Manager' },
+  { quote: 'RiteshDev Studio turned our rough product idea into a polished mobile app flow that felt ready for real customers.', author: 'Startup Founder', role: 'Travel Tech Startup' },
+  { quote: 'The dashboard and mobile workflows were aligned with our business process from day one. Delivery was clear and reliable.', author: 'Operations Lead', role: 'Logistics Business' },
+  { quote: 'Strong technical execution across React Native, Firebase, APIs, and release support. Very practical and business-minded.', author: 'Product Manager', role: 'SaaS Team' },
 ];
 
 export const footerLinks = [
-  { label: 'LinkedIn', href: '#' },
-  { label: 'GitHub', href: '#' },
+  // { label: 'LinkedIn', href: '#' },
+  { label: 'Facebook', href: 'https://www.facebook.com/rsharma166/' },
   { label: 'WhatsApp', href: 'https://wa.me/918077176860?text=Hello%20Ritesh%2C%20I%20want%20to%20discuss%20my%20project.' },
   { label: 'Email', href: 'mailto:riteshsharma395@gmail.com' },
 ];

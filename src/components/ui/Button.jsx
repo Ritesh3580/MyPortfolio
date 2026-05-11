@@ -9,7 +9,7 @@ function Button({ href, children, variant = 'primary', className = '', ...props 
   return (
     <motion.a
       href={href}
-      className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold tracking-wide transition ${styles[variant]} ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold tracking-wide transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 ${styles[variant]} ${className}`}
       whileHover={{ y: -2, scale: 1.01 }}
       whileTap={{ scale: 0.98 }}
       {...props}
